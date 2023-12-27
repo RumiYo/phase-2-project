@@ -1,7 +1,5 @@
-// data source:   https://api.tvmaze.com/shows
-// edited here: https://jsoneditoronline.org/
-
-[
+{
+"shows": [
     {
       "id": 1,
       "name": "Under the Dome",
@@ -7213,3 +7211,4 @@
       "ended": "2015-08-06"
     }
   ]
+}
