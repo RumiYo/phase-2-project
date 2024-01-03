@@ -1,10 +1,14 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useOutletContext } from "react-router-dom";
+import Show from "../components/Show"
 
 function Shows(){
+
+    const showsList = useOutletContext()
 
     return (
         <main>
             <h1>Shows</h1>
+            {showsList.map(showData => <Show showData={showData} key={showData.id}/>)}
         </main>
     )
 }
