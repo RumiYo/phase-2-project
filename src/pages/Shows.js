@@ -7,7 +7,7 @@ function Shows(){
 
     return (
         <main>
-            <h1>Shows</h1>
+            <h1>All Shows</h1>
             {showsList.map(showData => <Show showData={showData} key={showData.id}/>)}
         </main>
     )

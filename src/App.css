@@ -1,3 +1,18 @@
+div .show {
+  background-color: #fefae0;;
+  align-items: center;
+  margin:5px;
+  text-align: center;
+  display: block;
+  float: left;
+  padding: 0px;
+  width: 10%;
+  height:320px;
+}
+img {
+  width: 100%;
+}
+
 .App {
   text-align: center;
 }
