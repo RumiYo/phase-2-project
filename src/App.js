@@ -26,7 +26,6 @@ function App(){
     setGenres(uniqueGenres)
   },[showsList])
 
-    console.log(genres)
 
 
   return (

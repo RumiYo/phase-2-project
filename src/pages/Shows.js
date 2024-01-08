@@ -3,7 +3,7 @@ import Show from "../components/Show"
 
 function Shows(){
 
-    const showsList = useOutletContext()
+    const {showsList, genres} = useOutletContext()
 
     return (
         <main>
