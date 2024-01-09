@@ -6,8 +6,9 @@ function Show({ showData }){
     return (
         <div className="show">
             <img src={showData.image.medium} />
-         <h4>{showData.name}</h4>
-         <p>Rating: {showData.rating.average}</p>
+         <h5>{showData.name}</h5>
+         <small>Rating: {showData.rating.average}</small><br/>
+         <small>From {showData.premiered}</small>
         </div>
 
     )

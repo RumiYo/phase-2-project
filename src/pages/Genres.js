@@ -23,8 +23,9 @@ console.log(selectedGenreShows)
                 <select id="genreSelect" onChange={genreFilterSelect}>
                     {genres.map(genre => <option value={genre} key={genre}>{genre}</option>)}
                 </select>
-                <h3>{selectedGenre} shows</h3>
-                {selectedGenreShows.map(showData => <Show showData={showData} key={showData.id}/>)}
+                <div>
+                 {selectedGenreShows.map(showData => <Show showData={showData} key={showData.id}/>)}
+                </div>
         </main>
     )
 }
