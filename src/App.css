@@ -1,6 +1,26 @@
-div .show {
-  background-color: #fefae0;;
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+* {
+  font-family: 'Raleway', Arial, sans-serif;
+
+}
+
+body {
+  margin-top: 20px;
+  align-items: center;  
+  background-color: #F0EFEB;
+  color: #69381E;
+
+}
+
+main {
+  margin: 5%;
+}
+
+div.showList {
+  background-color: #EDDCD2;
   align-items: center;
+  margin:5px;
   margin:4px;
   text-align: center;
   display: block;
@@ -9,8 +29,10 @@ div .show {
   width: 10%;
   height:340px;
 }
-img {
-  width: 100%;
+img.showListImage {
+  width: 94%;
+  align-items: center;
+  margin-top: 2px;
 }
 
 div#showDetail{
@@ -19,12 +41,13 @@ div#showDetail{
   height: 60%; /* Full height (cover the whole page) */
   top: 20%;
   left: 15%;
-  background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+  background-color: #96967A;/* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer;  /* Add a pointer on hover */
 
   color: white;
   padding: 0% 5%;
+  opacity: 0.95;
 }
 
 img#showDetailImage {

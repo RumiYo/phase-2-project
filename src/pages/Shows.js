@@ -36,6 +36,7 @@ function Shows(){
         <main>
             <h1>All Shows</h1>
             <ShowListFilter filter={filter} setFilter={setFilter}/>
+            <Outlet context={{showsList: showsList, genres: genres}} /> 
             <div className="allShows">
                 {displayedShowList.map(showData => <Show showData={showData} key={showData.id} />)}
             </div>
