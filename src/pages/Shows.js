@@ -9,8 +9,6 @@ function Shows(){
     const [ filter, setFilter ]= useState("");
     let displayedShowList = showsList;
 
-    console.log(filter)
-
     if(filter==="Year"){
         displayedShowList = showsList.sort((a,b) => {
             if(a.premiered < b.premiered){
@@ -38,6 +36,7 @@ function Shows(){
         <main>
             <h1>All Shows</h1>
             <RatingFilter filter={filter} setFilter={setFilter}/>
+            <Outlet context={{showsList: showsList, genres: genres}} /> 
             <div className="allShows">
                 {displayedShowList.map(showData => <Show showData={showData} key={showData.id} />)}
             </div>
