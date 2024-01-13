@@ -20,7 +20,7 @@ function ShowDetails(){
             <p>Rating: {show.rating.average}</p>
             <h4>Genres</h4>
             <ul>
-                {show.genres.map(genre => <li>{genre}</li>)}
+                {show.genres.map(genre => <li key={genre}>{genre}</li>)}
             </ul>
             <h4>Summary</h4>
             <div dangerouslySetInnerHTML={{ __html: show.summary }}></div>

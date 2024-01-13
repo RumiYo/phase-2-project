@@ -1,6 +1,6 @@
 import { Outlet, useOutletContext } from "react-router-dom";
 
-function RatingFilter({ filter, setFilter }){
+function ShowListFilter({ filter, setFilter }){
 
     function filterClick(e){
         setFilter(e.target.value)
@@ -15,4 +15,4 @@ function RatingFilter({ filter, setFilter }){
     )
 }
 
-export default RatingFilter;
+export default ShowListFilter;

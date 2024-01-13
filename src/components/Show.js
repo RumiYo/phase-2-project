@@ -9,7 +9,7 @@ function Show({ showData }){
 
     return (
         <div className="showList">
-            <img src={showData.image.medium} class="showListImage"/>
+            <img src={showData.image.medium} className="showListImage"/>
             <h5>{showData.name}</h5>
             <small>Rating: {showData.rating.average}</small><br/>
             <small>From {showData.premiered}</small><br/>

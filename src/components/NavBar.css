@@ -1,10 +1,18 @@
+nav{ 
+    background: #A5A58D;
+    padding: 2px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
 .nav-link{
     display: inline-block;
     box-sizing: border-box;
     width: 60px;
     padding: 5px;
     margin: 0 6px 6px;
-    background: peachpuff;
     text-decoration: none;
     text-align: center;
     font-size: min(10vw, 15px) ;
@@ -12,5 +20,6 @@
 }
   
 .active {
-    color: red;
+    color: #8c2f39;
+    font-weight: bold;
 }

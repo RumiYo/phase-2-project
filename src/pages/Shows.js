@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Outlet, useOutletContext } from "react-router-dom";
 import Show from "../components/Show";
-import RatingFilter from "../components/RatingFilter";
+import ShowListFilter from "../components/ShowListFilter";
 
 function Shows(){
 
@@ -35,7 +35,7 @@ function Shows(){
     return (
         <main>
             <h1>All Shows</h1>
-            <RatingFilter filter={filter} setFilter={setFilter}/>
+            <ShowListFilter filter={filter} setFilter={setFilter}/>
             <Outlet context={{showsList: showsList, genres: genres}} /> 
             <div className="allShows">
                 {displayedShowList.map(showData => <Show showData={showData} key={showData.id} />)}
