@@ -35,8 +35,7 @@ function Shows(){
     return (
         <main>
             <h1>All Shows</h1>
-            <ShowListFilter filter={filter} setFilter={setFilter}/>
-            <Outlet context={{showsList: showsList, genres: genres}} /> 
+            <RatingFilter filter={filter} setFilter={setFilter}/>
             <div className="allShows">
                 {displayedShowList.map(showData => <Show showData={showData} key={showData.id} />)}
             </div>
