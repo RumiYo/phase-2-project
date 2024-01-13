@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Shows from "./pages/Shows";
 import Genres from "./pages/Genres";
 import ErrorPage from "./pages/ErrorPage";
+import ShowDetails from "./pages/ShowDetails";
 
 const routes =[
     {
@@ -16,7 +17,13 @@ const routes =[
             },
             {
                 path: "/shows",
-                element: <Shows />
+                element: <Shows />,
+                children: [
+                    {
+                        path: "/shows/:id",
+                        element: <ShowDetails />
+                    }
+                ]
             },
             {
                 path: "/genres",
