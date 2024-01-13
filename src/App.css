@@ -58,4 +58,9 @@ img#showDetailImage {
 
 }
 
+#closeDetails {
+  font-size: 110%; 
+  float: right;
+}
+
 
