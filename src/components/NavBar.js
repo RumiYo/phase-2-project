@@ -19,6 +19,11 @@ function NavBar(){
                 className="nav-link"
             >Shows
             </NavLink>
+            <NavLink 
+                to="/AddNew"
+                className="nav-link"
+            >Add
+            </NavLink>
         </nav>
     )
 }

@@ -88,5 +88,20 @@ img#showDetailImage {
   float: right;
 }
 
+.inputLabel{
+  display: inline-block;
+  width: 8%;
+  min-width: 60px;
+  line-height: 350%;
+}
+
+#genresSelect{
+  margin-left: 8%;
+  width: 80% 
+}
+
+.checkboxelabels{
+  margin-right: 15px;
+}
 
 

@@ -18,12 +18,10 @@ function ShowDetails(){
         <div id="showDetail">
             <h1>{show.name}</h1>
             <img src={show.image.original} id="showDetailImage"/>
-            <p>Rating: {show.rating.average}</p>
-            <p>Premiered: {show.premiered}</p>
-            <h4>Genres</h4>
-            <ul>
-                {show.genres.map(genre => <li key={genre}>{genre}</li>)}
-            </ul>
+            <p><b>Rating: </b>{show.rating.average}</p>
+            <p><b>Premiered: </b>{show.premiered}  /  Ended: {show.ended}</p>
+            <p><b>Genres: </b>{show.genres.join(', ')}</p>
+            <p><b>Network: </b>{show.network.name}  /  <b>Country: </b> {show.network.country.name}</p> 
             <h4>Summary</h4>
             <div dangerouslySetInnerHTML={{ __html: show.summary }}></div>
             <Link id="closeDetails" to={`/shows`}>Close details</Link> 
