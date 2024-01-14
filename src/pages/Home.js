@@ -25,8 +25,7 @@ function Home(){
 
     return (
         <main>
-            <h1>Home</h1>
-            <h3>Top 10 shows</h3>
+            <h1>Home:  Top 10 shows</h1>
             {top10ShowsDisplayed}
         </main>
     )
