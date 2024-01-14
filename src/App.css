@@ -104,4 +104,11 @@ img#showDetailImage {
   margin-right: 15px;
 }
 
-
+#addButton{
+  background-color: #CB997E;
+  border: none;
+  color: #FFF1E6;
+  padding: 15px 50px;
+  cursor: pointer;
+  font-size: 110%;
+}
