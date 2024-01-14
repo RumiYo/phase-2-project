@@ -17,6 +17,30 @@ main {
   margin: 5%;
 }
 
+/* Home */
+
+.top10Shows{
+  display: block;
+  width: 100%;
+  min-height: 470px;
+  max-height: 700px;
+  background-color: #DDBEA9;
+  padding: 15px;
+  margin: 30px 0 ;
+  overflow: auto;
+}
+.top10ShowsImage{
+  width:18%;
+  float: left;
+  margin:5px 40px 5px 0;
+}
+.top10ShowsText{
+  margin: 0 50px ;
+}
+ul{
+  margin-left: 50px;
+}
+
 div.showList {
   background-color: #EDDCD2;
   align-items: center;
@@ -28,6 +52,7 @@ div.showList {
   padding: 0px;
   width: 10%;
   height:340px;
+  overflow: auto;
 }
 img.showListImage {
   width: 94%;
@@ -38,29 +63,30 @@ img.showListImage {
 div#showDetail{
   position: fixed; /* Set on top of the page content */
   width: 60%; /* Full width (cover the whole page) */
-  height: 60%; /* Full height (cover the whole page) */
-  top: 20%;
+  min-height: 60%; /* Full height (cover the whole page) */
+  max-height: 80%;
+  top: 16%;
   left: 15%;
   background-color: #96967A;/* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer;  /* Add a pointer on hover */
 
   color: white;
-  padding: 0% 5%;
+  padding: 0% 5% 3% 5%;
   opacity: 0.95;
+  overflow: auto;
 }
 
 img#showDetailImage {
-  height: 75%;
+  width: 40%;
   float: left;
   margin:0 40px 0 0
-
-
 }
 
 #closeDetails {
   font-size: 110%; 
   float: right;
 }
+
 
 
