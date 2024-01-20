@@ -7209,27 +7209,6 @@
       "status": "Ended",
       "premiered": "1999-01-11",
       "ended": "2015-08-06"
-    },
-    {
-      "name": "Stranger Things",
-      "genres": [
-        "Drama"
-      ],
-      "rating": {
-        "average": 9
-      },
-      "network": {
-        "name": "Netflix",
-        "country": {
-          "name": "United States"
-        }
-      },
-      "image": {
-        "original": "https;//test"
-      },
-      "summary": "qwerty",
-      "premiered": "2024-01-01",
-      "id": 250
     }
   ]
 }

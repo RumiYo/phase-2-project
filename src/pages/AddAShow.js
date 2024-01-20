@@ -3,7 +3,7 @@ import { Outlet, useOutletContext, useNavigate } from "react-router-dom";
 
 function AddAShow(){
 
-    const {showsList, genres} = useOutletContext();
+    const {showsList, genres, addNewShow} = useOutletContext();
 
     const [nameNew, setNameNew] = useState('');
     const [ratingNew, setRatingNew] = useState('');
@@ -47,7 +47,8 @@ function AddAShow(){
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
+            addNewShow(data)
+            navigate(`/shows/${data.id}`)
             
         })
         }

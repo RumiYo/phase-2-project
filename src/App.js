@@ -26,14 +26,16 @@ function App(){
     setGenres(uniqueGenres)
   },[showsList])
 
-
+  function addNewShow(newShow){
+    setShowsList([...showsList, newShow])
+  }
 
   return (
     <>
       <header>
         <NavBar />
       </header>
-      <Outlet context={{showsList: showsList, genres: genres}}/>
+      <Outlet context={{showsList: showsList, genres: genres, addNewShow: addNewShow}}/>
     </>
   )
 }
