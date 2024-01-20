@@ -1,7 +1,6 @@
 import App from "./App";
 import Home from "./pages/Home";
 import Shows from "./pages/Shows";
-import Genres from "./pages/Genres";
 import ErrorPage from "./pages/ErrorPage";
 import ShowDetails from "./pages/ShowDetails";
 import AddAShow from "./pages/AddAShow";
@@ -25,10 +24,6 @@ const routes =[
                         element: <ShowDetails />
                     }
                 ]
-            },
-            {
-                path: "/genres",
-                element: <Genres />
             },
             {
                 path: "/AddNew",

@@ -10,14 +10,9 @@ function NavBar(){
             >Home
             </NavLink>
             <NavLink 
-                to="/genres"
-                className="nav-link"
-            >Genres
-            </NavLink>
-            <NavLink 
                 to="/shows"
                 className="nav-link"
-            >Shows
+            >All Shows
             </NavLink>
             <NavLink 
                 to="/AddNew"
