@@ -3,21 +3,15 @@ import { Link } from "react-router-dom";
 
 function ShowDetails(){
 
-
     const params = useParams();
-    const {showsList, genres} = useOutletContext();
-
-    console.log('details!', params)
-
+    const { showsList } = useOutletContext();
 
     const show = showsList.find(item => item.id === parseInt(params.id))
-    console.log(show.name)
-
 
     return (
         <div id="showDetail">
             <h1>{show.name}</h1>
-            <img src={show.image.original} id="showDetailImage"/>
+            <img src={show.image.original} alt={show.name} id="showDetailImage"/>
             <p><b>Rating: </b>{show.rating.average}</p>
             <p><b>Premiered: </b>{show.premiered}  /  Ended: {show.ended}</p>
             <p><b>Genres: </b>{show.genres.join(', ')}</p>
@@ -26,7 +20,6 @@ function ShowDetails(){
             <div dangerouslySetInnerHTML={{ __html: show.summary }}></div>
             <Link id="closeDetails" to={`/shows`}>Close details</Link> 
         </div>
-
     )
 }
 

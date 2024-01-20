@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, Outlet, useOutletContext } from "react-router-dom";
+import { Link, useOutletContext } from "react-router-dom";
 import "../App.css";
 
 
@@ -9,7 +9,7 @@ function Show({ showData }){
 
     return (
          <div className="showList">
-            <img src={showData.image.original} className="showListImage"/>
+            <img src={showData.image.original} alt={showData.name} className="showListImage"/>
             <h5>{showData.name}</h5>
             <small>Rating: {showData.rating.average}</small><br/>
             <small>From {showData.premiered}</small><br/>

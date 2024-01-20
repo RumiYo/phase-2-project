@@ -24,7 +24,6 @@ function Shows(){
         displayedShowList = selectedGenreShows;
     }
 
-
     if(filter==="Year"){
         displayedShowList = selectedGenreShows.sort((a,b) => {
             if(a.premiered < b.premiered){

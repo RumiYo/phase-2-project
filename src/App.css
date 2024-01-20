@@ -2,7 +2,6 @@
 
 * {
   font-family: 'Raleway', Arial, sans-serif;
-
 }
 
 body {
@@ -10,7 +9,6 @@ body {
   align-items: center;  
   background-color: #F0EFEB;
   color: #69381E;
-
 }
 
 main {
@@ -41,6 +39,8 @@ ul{
   margin-left: 50px;
 }
 
+/* ShowList */
+
 div.showList {
   background-color: #EDDCD2;
   align-items: center;
@@ -60,6 +60,8 @@ img.showListImage {
   align-items: center;
   margin-top: 2px;
 }
+
+/* Overlay ShowDetails */
 
 div#showDetail{
   position: fixed; /* Set on top of the page content */
@@ -88,6 +90,8 @@ img#showDetailImage {
   font-size: 110%; 
   float: right;
 }
+
+/* AddShow */
 
 .inputLabel{
   display: inline-block;

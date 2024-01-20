@@ -1,16 +1,17 @@
-import { Outlet, useOutletContext } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 
 function Home(){
 
-    const {showsList, genres} = useOutletContext()
+    const { showsList } = useOutletContext()
+
     const showListRanking = showsList.sort((a,b) => b.rating.average - a.rating.average )
     const top10Shows = showListRanking.slice(0,10);
 
     const top10ShowsDisplayed = top10Shows.map(show =>
-         (
+        (
             <div className="top10Shows" key={show.id}>
                 <h2>{show.name}</h2>
-                <img src={show.image.original} className="top10ShowsImage"/>
+                <img src={show.image.original} alt={show.name} className="top10ShowsImage"/>
                 <div className="top10ShowsText">
                     <p><b>Rating: </b>{show.rating.average}</p>
                     <p><b>Premiered: </b>{show.premiered}  /  Ended: {show.ended}</p>
@@ -21,7 +22,7 @@ function Home(){
                 </div>
             </div>
         )
-     )
+    )
 
     return (
         <main>

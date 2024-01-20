@@ -1,5 +1,3 @@
-import { Outlet, useOutletContext } from "react-router-dom";
-
 function ShowListFilter({ filter, setFilter }){
 
     function filterClick(e){
