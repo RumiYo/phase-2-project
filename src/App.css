@@ -90,8 +90,8 @@ img#showDetailImage {
 
 .inputLabel{
   display: inline-block;
-  width: 8%;
-  min-width: 60px;
+  width: 10%;
+  min-width: 100px;
   line-height: 350%;
 }
 
