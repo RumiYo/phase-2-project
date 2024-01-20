@@ -6,7 +6,7 @@
 }
 
 body {
-  margin-top: 20px;
+  margin-top: 50px;
   align-items: center;  
   background-color: #F0EFEB;
   color: #69381E;
@@ -51,6 +51,7 @@ div.showList {
   float: left;
   padding: 0px;
   width: 10%;
+  min-width: 110px;
   height:340px;
   overflow: auto;
 }
