@@ -2,13 +2,14 @@
 
 ## Table of Contents
 * [Phase2 project requirement](#phase2-project-requirements)
-* [React single page application]()
+* [React single page application](#react-single-page-application)
+* [Technologies](#technologies)
+* [API](#apidata-source)
 
 
 ## Phase2 project requirements
 
 [Project guidelines are here. ](https://github.com/learn-co-curriculum/react-hooks-phase-2-project)
-
 
 1. You must make a single page application (only one `index.html` file) using
    `create-react-app`.
@@ -30,25 +31,45 @@
    UI][material-ui]) if you prefer.
 
 ## React single page application
+The main page shows the top 10 high-rated shows. The all shows tab has the list of all shows so we can use filters and sorts to find what we are the most interested in. If the shows you watched is missing, please add them from "Add" tab.  
 [TV Show Search App](https://github.com/RumiYo/phase-2-project/assets/131638126/709d5c26-cb57-4b60-bd62-c260774e9b4c)
 
 ## Technologies
-### overray
-https://www.w3schools.com/howto/howto_css_overlay.asp
+### Overlay
+The code below is added in App.css to show the show details with the overlay format
+```
+div#showDetail{
+  position: fixed; /* Set on top of the page content */
+  width: 60%; /* Full width (cover the whole page) */
+  min-height: 60%; /* Full height (cover the whole page) */
+  max-height: 80%;
+  top: 16%;
+  left: 15%;
+  background-color: #96967A;/* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;  /* Add a pointer on hover */
+
+  color: white;
+  padding: 0% 5% 3% 5%;
+  opacity: 0.95;
+  overflow: auto;
+```
+_Reference:  https://www.w3schools.com/howto/howto_css_overlay.asp_
 
 
 ### Color palette
-https://coolors.co/palette/cb997e-eddcd2-fff1e6-f0efeb-ddbea9-a5a58d-b7b7a4
+The palette below is used to cordinate the application in the sae type of colors.
+![Color palette](https://github.com/RumiYo/phase-2-project/assets/131638126/b146777e-8909-4a2f-adb8-8e0400ac8472)
+_Reference:  https://coolors.co/palette/cb997e-eddcd2-fff1e6-f0efeb-ddbea9-a5a58d-b7b7a4_
 
 
-## API(Data Source)
+## API (Data Source)
 #### Data Source
-TMAZE API
-https://www.tvmaze.com/api
+- TMAZE API    _https://www.tvmaze.com/api_
 
 #### List of Free Open APIs
-Use this page to find a good data source
-https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
+Reffered this page to find a good data source.
+- _https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/_
 
 
 
