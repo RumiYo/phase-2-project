@@ -1,8 +1,9 @@
 # TV Show search 
+Flatiron Softwear engineer course phase 2 project 
 
 ## Table of Contents
 * [Phase2 project requirement](#phase2-project-requirements)
-* [React single page application](#react-single-page-application)
+* [React single page application](#my-react-single-page-application)
 * [Technologies](#technologies)
 * [API](#apidata-source)
 
@@ -30,11 +31,13 @@
    Bootstrap][react-bootstrap], [Semantic UI][semantic-ui], or [Material
    UI][material-ui]) if you prefer.
 
-## React single page application
+## My React single page application
 The main page shows the top 10 high-rated shows. The all shows tab has the list of all shows so we can use filters and sorts to find what we are the most interested in. If the shows you watched is missing, please add them from "Add" tab.  
+
 [TV Show Search App](https://github.com/RumiYo/phase-2-project/assets/131638126/709d5c26-cb57-4b60-bd62-c260774e9b4c)
 
 ## Technologies
+
 ### Overlay
 The code below is added in App.css to show the show details with the overlay format
 ```
