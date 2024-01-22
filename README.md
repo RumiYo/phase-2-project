@@ -131,7 +131,7 @@ _Reference:  https://www.w3schools.com/howto/howto_css_overlay.asp_
 ### Color palette
 The palette below is used to cordinate the application in the sae type of colors.
 
-[Color palette](https://github.com/RumiYo/phase-2-project/assets/131638126/b146777e-8909-4a2f-adb8-8e0400ac8472)
+![Color palette](https://github.com/RumiYo/phase-2-project/assets/131638126/b146777e-8909-4a2f-adb8-8e0400ac8472)
 
 _Reference:  https://coolors.co/palette/cb997e-eddcd2-fff1e6-f0efeb-ddbea9-a5a58d-b7b7a4_
 
@@ -141,10 +141,10 @@ _Reference:  https://coolors.co/palette/cb997e-eddcd2-fff1e6-f0efeb-ddbea9-a5a58
 The data was extracted from this API.
 - TMAZE API    _https://www.tvmaze.com/api_
 And some parameters were removed with the tool below.
-https://jsoneditoronline.org/
+- JSON Editor Online    _https://jsoneditoronline.org/_
 
 #### List of Free Open APIs
-This page was refered to find a good data source.
+This page was referred to find a good data source.
 - _https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/_
 
 
