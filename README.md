@@ -40,6 +40,7 @@ The main page shows the top 10 high-rated shows. The all shows tab has the list 
 
 ### useNavigate()
 useNavigate enable the programmatic navigation which change the browser URL, and show the user a new page in our application after a certain action, without making the user click on a link
+useNavigate() was used on "Add" tab
 ```
 import React,{useState} from "react";
 import { useOutletContext, useNavigate } from "react-router-dom";
@@ -71,7 +72,7 @@ _Reference: [Programmatic Navigation Code-Along](https://learning.flatironschool
 
 ### Array.prototype.sort()
 The function in parenthesis determines the sort order. The return value should be a number whose sign indicates the relative order of the two elements: negative if a is less than b, positive if a is greater than b, and zero if they are equal. 
-1. Sort was used to create TOP 10 show list
+1. Sort was used to create TOP 10 show list on "Home" tab
 ```
     const showListRanking = showsList.sort((a,b) => b.rating.average - a.rating.average )
     const top10Shows = showListRanking.slice(0,10);
@@ -129,7 +130,9 @@ _Reference:  https://www.w3schools.com/howto/howto_css_overlay.asp_
 
 ### Color palette
 The palette below is used to cordinate the application in the sae type of colors.
-![Color palette](https://github.com/RumiYo/phase-2-project/assets/131638126/b146777e-8909-4a2f-adb8-8e0400ac8472)
+
+[Color palette](https://github.com/RumiYo/phase-2-project/assets/131638126/b146777e-8909-4a2f-adb8-8e0400ac8472)
+
 _Reference:  https://coolors.co/palette/cb997e-eddcd2-fff1e6-f0efeb-ddbea9-a5a58d-b7b7a4_
 
 
