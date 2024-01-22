@@ -140,6 +140,7 @@ _Reference:  https://coolors.co/palette/cb997e-eddcd2-fff1e6-f0efeb-ddbea9-a5a58
 #### Data Source
 The data was extracted from this API.
 - TMAZE API    _https://www.tvmaze.com/api_
+
 And some parameters were removed with the tool below.
 - JSON Editor Online    _https://jsoneditoronline.org/_
 
