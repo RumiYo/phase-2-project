@@ -3,7 +3,7 @@ Flatiron Softwear engineer course phase 2 project
 
 ## Table of Contents
 * [Phase2 project requirement](#phase2-project-requirements)
-* [React single page application](#my-react-single-page-application)
+* [My React single page application](#my-react-single-page-application)
 * [Technologies](#technologies)
 * [API](#apidata-source)
 
@@ -38,8 +38,74 @@ The main page shows the top 10 high-rated shows. The all shows tab has the list 
 
 ## Technologies
 
+### useNavigate()
+useNavigate enable the programmatic navigation which change the browser URL, and show the user a new page in our application after a certain action, without making the user click on a link
+```
+import React,{useState} from "react";
+import { useOutletContext, useNavigate } from "react-router-dom";
+
+function AddAShow(){
+    const { genres, addNewShow} = useOutletContext();
+    const navigate = useNavigate();
+
+    function submitClick(e){
+        e.preventDefault();
+        const newShow = { ... }
+        fetch('http://localhost:3000/shows',{
+            method: "POST",
+            headers: {
+                "Content-type":"application/json",
+            },
+            body: JSON.stringify(newShow),
+        })
+        .then(res => res.json())
+        .then(data => {
+            addNewShow(data)
+            navigate(`/shows/${data.id}`)
+        })
+    }
+}
+
+```
+_Reference: [Programmatic Navigation Code-Along](https://learning.flatironschool.com/courses/6558/assignments/259603?module_item_id=616056)_
+
+### Array.prototype.sort()
+The function in parenthesis determines the sort order. The return value should be a number whose sign indicates the relative order of the two elements: negative if a is less than b, positive if a is greater than b, and zero if they are equal. 
+1. Sort was used to create TOP 10 show list
+```
+    const showListRanking = showsList.sort((a,b) => b.rating.average - a.rating.average )
+    const top10Shows = showListRanking.slice(0,10);
+```
+2. Sort was used for the sort filters on "All Shows" tab
+```
+if(filter==="Year"){
+        displayedShowList = selectedGenreShows.sort((a,b) => {
+            if(a.premiered < b.premiered){
+                return 1;
+            }if(a.premiered > b.premiered){
+                return -1;
+            }
+            return 0;
+        })
+    }else if(filter==="Rating"){
+         displayedShowList = selectedGenreShows.sort((a,b) => b.rating.average - a.rating.average )
+    }
+    else if(filter==="Name"){
+         displayedShowList = selectedGenreShows.sort((a,b) => {
+            if(a.name < b.name){
+                return -1;
+            }if(a.name > b.name){
+                return 1;
+            }
+            return 0;
+        })
+    }  
+```
+
+_Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort_
+
 ### Overlay
-The code below is added in App.css to show the show details with the overlay format
+The code below is added in App.css to show the show details with the overlay format.
 ```
 div#showDetail{
   position: fixed; /* Set on top of the page content */
@@ -56,6 +122,7 @@ div#showDetail{
   padding: 0% 5% 3% 5%;
   opacity: 0.95;
   overflow: auto;
+}
 ```
 _Reference:  https://www.w3schools.com/howto/howto_css_overlay.asp_
 
@@ -68,10 +135,13 @@ _Reference:  https://coolors.co/palette/cb997e-eddcd2-fff1e6-f0efeb-ddbea9-a5a58
 
 ## API (Data Source)
 #### Data Source
+The data was extracted from this API.
 - TMAZE API    _https://www.tvmaze.com/api_
+And some parameters were removed with the tool below.
+https://jsoneditoronline.org/
 
 #### List of Free Open APIs
-Reffered this page to find a good data source.
+This page was refered to find a good data source.
 - _https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/_
 
 
