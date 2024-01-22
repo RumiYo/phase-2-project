@@ -5,7 +5,7 @@ Flatiron Softwear engineer course phase 2 project
 * [Phase2 project requirement](#phase2-project-requirements)
 * [My React single page application](#my-react-single-page-application)
 * [Technologies](#technologies)
-* [API](#apidata-source)
+* [API](#api-data-source)
 
 
 ## Phase2 project requirements
