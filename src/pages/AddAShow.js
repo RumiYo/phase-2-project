@@ -54,15 +54,15 @@ function AddAShow(){
     return (
         <main>
             <h1>Add show</h1>
-            <form id="inputForm">
+            <form id="inputForm" onSubmit={submitClick}>
                 <label className="inputLabel" for="name">Show title: </label>
-                <input type="text" id="name" placeholder="Stranger Things" size="40" onChange={ e => setNameNew(e.target.value) } required/><br/>
+                <input type="text" id="name" placeholder="Stranger Things" size="40" value={nameNew} onChange={ e => setNameNew(e.target.value) } required /><br/>
 
                 <label  className="inputLabel" for="rating">Rating:   </label>
-                <input type="number" min="0.1" max="10.0" step="0.1" id="rating" placeholder="8.9" onChange={ e => setRatingNew(e.target.value) } required/><br/>
+                <input type="number" min="0.1" max="10.0" step="0.1" id="rating" placeholder="8.9" value={ratingNew} onChange={ e => setRatingNew(e.target.value) } required/><br/>
 
                 <label  className="inputLabel" for="premiered">Premiered:   </label>
-                <input type="date" id="premiered" placeholder="" onChange={ e => setPremieredNew(e.target.value) } required/><br/>
+                <input type="date" id="premiered" placeholder="" value={premieredNew} onChange={ e => setPremieredNew(e.target.value) } required/><br/>
 
                 <label className="inputLabel" for="genres">Genres: </label>
                 <div id="genresSelect" >
@@ -75,19 +75,19 @@ function AddAShow(){
                 </div><br/>
 
                 <label className="inputLabel" for="network">Network: </label>
-                <input type="text" id="network" placeholder="Netflix"  size="30" onChange={ e => setNetworkNew(e.target.value) } required /><br/>
+                <input type="text" id="network" placeholder="Netflix"  size="30" value={networkNew} onChange={ e => setNetworkNew(e.target.value) } required /><br/>
 
                 <label className="inputLabel" for="country">Country: </label>
-                <input type="text" id="country" placeholder="United States" onChange={ e => setCountryNew(e.target.value) } required /><br/>
+                <input type="text" id="country" placeholder="United States" value={countryNew} onChange={ e => setCountryNew(e.target.value) } required /><br/>
 
                 <label className="inputLabel" for="imageUrl">Image URL: </label>
-                <input type="url" pattern="https://.*" placeholder="https://example.com" id="imageUrl" size="60" onChange={ e => setImageUrlNew(e.target.value) } required /><br/>
+                <input type="url" pattern="https://.*" placeholder="https://example.com" id="imageUrl" size="60" value={imageUrlNew} onChange={ e => setImageUrlNew(e.target.value) } required /><br/>
 
                 <label className="inputLabel" for="summary">Summary: </label>
-                <textarea id="summary" rows="7" cols="100" placeholder="When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl." onChange={ e => setSummaryNew(e.target.value) } required /><br/>
-
-                <button id="addButton" type="submit" value="Add a new show" onClick={submitClick}>Add a new show</button>
+                <textarea id="summary" rows="7" cols="100" value={summaryNew} placeholder="When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl." onChange={ e => setSummaryNew(e.target.value) } required /><br/>
+                <input type="submit" id="addButton" value="Add a new show" />
             </form>
+
         </main>
     )
 }
